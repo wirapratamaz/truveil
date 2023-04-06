@@ -20,7 +20,7 @@ const db = require("./app/models");
 const Role = db.role;
 
 db.mongoose
-  .connect(`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`, {
+  .connect(`mongodb+srv://wirapratamaz:wiradenkayu1850@cluster0.ftvonfo.mongodb.net/db_backend`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
@@ -35,7 +35,7 @@ db.mongoose
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Welcome to backend" });
 });
 
 // routes
